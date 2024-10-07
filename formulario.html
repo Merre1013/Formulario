@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./Estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escribeme y charlemos</h1>
+        <form id="formulario" action="" method="post">
+            <center><label for="nombre">Nombre:</label></center>
+            <center><input type="text" id="nombre" name="nombre" required></center>
+
+            <center><label for="apellido">Apellido:</label></center>
+            <center><input type="text" id="apellido" name="apelido" required></center>
+
+            <center><label for="email">Correo Electrónico:</label></center>
+            <center><input type="email" id="email" name="email" required></center>
+
+            <center><label class="blanco" for="pregunta">Pregunta sobre mi perfil:</label></center>
+            <center><textarea id="pregunta" name="pregunta" rows="4" required></textarea></center>
+
+            <center><button type="submit"onClick="validar()">Enviar</button></center>
+        </form>
+    </div>
+
+    <script src="./Formulario.js"></script>
+</body>
+</html>
